@@ -476,12 +476,10 @@
     <p>Wishing you a joyful and prosperous Diwali! 🪔</p>
     <p>Made with ❤️ for the Festival of Lights</p>
   </footer>
-
-  <script>
-    // Mock API key - replace with your actual Gemini API key
-    const API_KEY = "AIzaSyC56Gr71g3jF7l52Cs61q2y-z1m_VI"; // replace with your Gemini key
-    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
-    
+<script src="config.js"></script>
+<script>
+  const API_KEY = CONFIG.API_KEY;
+  const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
     // Greeting history
     let greetingHistory = [];
     
